@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+<record id="view_list_custom_column_helper" model="ir.ui.view">
+    <field name="name">stock_list_custom_column_helper</field>
+    <field name="model">list.custom.column.helper.wiz</field>
+    <field name="arch" type="xml">
+        <form string="Custom column">
+            <p>
+                The fields can be in view in 2 ways, visible and invisible.
+                In certain views, certain fields must be in view even though
+                they are invisible, so if you don't know how to proceed,
+                better hide the field than removing it.
+            </p>
+            <ul>
+                <li class="text-danger">
+                    <strong>Red</strong>: Fields that are not in the view, so
+                    no other field can reference these.
+                </li>
+                <li class="text-warning">
+                    <strong>Yellow</strong>: Fields that are in the view but
+                    are not visible to the user.
+                </li>
+                <li class="text-info">
+                    <strong>Blue</strong>: Fields that are in the view and
+                    are also visible in the view.
+                </li>
+            </ul>
+            <p>
+                The order of the fields is respected that of the rows, that is,
+                the first row corresponds to the first column.
+            </p>
+            <field name="line_ids">
+                <tree create="false" unlink="false"
+                        decoration-danger="not added"
+                        decoration-warning="not visible and added"
+                        decoration-info="added" >
+                    <field name="sequence" widget="handle"/>
+                    <field name="field_string"/>
+                    <field name="field_name"/>
+                    <field name="added" invisible="1"/>
+                    <field name="visible" invisible="1"/>
+                    <button name="action_toggle_added"
+                        type="object"
+                        string="Add"
+                        attrs="{
+                            'invisible':[('added','=',True)],
+                        }"/>
+                    <button name="action_toggle_added"
+                        type="object"
+                        string="Remove"
+                        attrs="{
+                            'invisible':[('added','=',False)],
+                        }"/>
+                    <button name="action_toggle_visible"
+                        type="object"
+                        string="Visible"
+                        attrs="{
+                            'invisible':[
+                                '|',
+                                ('added','=',False),
+                                ('visible','!=',False),
+                            ],
+                        }"/>
+                    <button name="action_toggle_visible"
+                        type="object"
+                        string="Hide"
+                        attrs="{
+                            'invisible':[
+                                '|',
+                                ('added','=',False),
+                                ('visible','=',False),
+                            ],
+                        }"/>
+                </tree>
+            </field>
+            <footer>
+                <button name="action_save_user"
+                    string="Change view: current user"
+                    type="object"
+                    class="bg-success-full"/>
+                <button name="action_save_all"
+                    string="Change view: for all users"
+                    type="object"
+                    class="bg-warning-full"/>
+                <button name="action_reset"
+                    string="Reset view"
+                    type="object"
+                    class="bg-danger-full"/>
+                <button string="_Cancel" class="btn-default" special="cancel" />
+            </footer>
+        </form>
+    </field>
+</record>
+
+</odoo>

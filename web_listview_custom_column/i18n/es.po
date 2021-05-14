@@ -1,0 +1,269 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_listview_custom_column
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-14 08:08+0000\n"
+"PO-Revision-Date: 2021-05-14 10:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. module: web_listview_custom_column
+#: code:addons/web_listview_custom_column/models/ir_ui_view.py:118
+#, python-format
+msgid "%s customized"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid ""
+"<strong>Blue</strong>: Fields that are in the view and\n"
+"                    are also visible in the view."
+msgstr ""
+"<strong>Azul</strong>: Campos que están en la vista y además son "
+"visibles en la vista."
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid ""
+"<strong>Red</strong>: Fields that are not in the view, so\n"
+"                    no other field can reference these."
+msgstr ""
+"<strong>Rojo</strong>: Campos que no están en la vista, por lo que "
+"ningún otro campo puede hacer referencia  estos."
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid ""
+"<strong>Yellow</strong>: Fields that are in the view but\n"
+"                    are not visible to the user."
+msgstr ""
+"<strong>Amarillo</strong>: Campos que están en la vista pero que no "
+"son visibles para el usuario."
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Add"
+msgstr "Añadir"
+
+#. module: web_listview_custom_column
+#: selection:list.custom.column.helper.wiz,type_desc:0
+msgid "All"
+msgstr "Todos"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Change view: current user"
+msgstr "Modificar vista: usuario actual"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Change view: for all users"
+msgstr "Modificar vista: todos los usuarios"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.custom_view_928_user_54
+msgid "Costes del vehículo"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_create_uid
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_create_date
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_create_date
+msgid "Created on"
+msgstr "Fecha de creación"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Custom column"
+msgstr "Columna personalizada"
+
+#. module: web_listview_custom_column
+#: model:res.groups,name:web_listview_custom_column.group_custom_column
+msgid "Customize list views"
+msgstr "Personalizar vistas lista"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_display_name
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: web_listview_custom_column
+#. openerp-web
+#: code:addons/web_listview_custom_column/static/src/xml/web_listview_custom_column.xml:7
+#, python-format
+msgid "Edit Custom columns"
+msgstr "Modificar columnas personalizadas"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.custom_view_581_user_54
+msgid "Fecha de presupuesto"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_field_string
+msgid "Field"
+msgstr "Campo"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_field_name
+msgid "Field name"
+msgstr "Nombre del campo"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Hide"
+msgstr "Ocultar"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_id
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_visible
+msgid "Is visible?"
+msgstr "¿Esá visible?"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz___last_update
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_write_uid
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_write_date
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_ids
+msgid "Line"
+msgstr "Línea"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.custom_view_581_user_54
+msgid "Número de presupuesto"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_added
+msgid "On view?"
+msgstr "¿Está en la vista?"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.custom_view_581_user_54
+msgid "Presupuesto"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Remove"
+msgstr "Quitar"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Reset view"
+msgstr "Borrar vista personalizada"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid ""
+"The fields can be in view in 2 ways, visible and invisible.\n"
+"                In certain views, certain fields must be in view even "
+"though\n"
+"                they are invisible, so if you don't know how to "
+"proceed,\n"
+"                better hide the field than removing it."
+msgstr ""
+"Los campos pueden estar en la vista de 2 formas, visibles e "
+"invivisibles. En ciertas vistas, ciertos campos tienen que estar en "
+"la vista obligatóriamente aunque estén invisibles, por lo que si no "
+"sabe como proceder, mejor oculte el campo antes de quitarlo."
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid ""
+"The order of the fields is respected that of the rows, that is,\n"
+"                the first row corresponds to the first column."
+msgstr ""
+"El orden de los campos se respeta al de las filas, es decir, primera "
+"fila corresponde con la primera columna."
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.custom_view_581_user_54
+msgid "Total de impuestos incluidos"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_type_desc
+msgid "Type"
+msgstr "Tipo"
+
+#. module: web_listview_custom_column
+#: selection:list.custom.column.helper.wiz,type_desc:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_view_id
+msgid "View"
+msgstr "Vista"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Visible"
+msgstr "Visible"
+
+#. module: web_listview_custom_column
+#: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_wiz_id
+msgid "Wizard"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "_Cancel"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.model,name:web_listview_custom_column.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.model,name:web_listview_custom_column.model_list_custom_column_helper_wiz
+msgid "list.custom.column.helper.wiz"
+msgstr ""
+
+#. module: web_listview_custom_column
+#: model:ir.model,name:web_listview_custom_column.model_list_custom_column_helper_wiz_line
+msgid "list.custom.column.helper.wiz.line"
+msgstr ""

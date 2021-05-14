@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+<t t-extend="WebClient.DebugManager.View">
+    <t t-jquery="li > a[data-action='edit'][data-model='ir.ui.view']:first" t-operation="after">
+        <li t-if="view.type == 'list'">
+            <a href="#" data-action="customColumn" data-model="ir.ui.view" t-att-data-id="view.fields_view.view_id">
+                Edit Custom columns
+            </a>
+        </li>
+    </t>
+</t>
+
+</templates>
