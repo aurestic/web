@@ -6,12 +6,16 @@
 Custom columns in listview
 ==========================
 
-This module was written to allow users to rearrange columns in list views. This can be done organization wide or just for the user herself.
+This module was written to allow users to rearrange columns in list views.
+This can be done organization wide or just for the user herself.
 
 Configuration
 =============
 
-To configure this module, you need to add users supposed to be able to customize columns to the group `Customize list views`. Note that this permission allows all sorts of mischief up to privilege escalation under certain circumstances, so this is only for trusted users.
+To configure this module, you need to add users supposed to be able to
+customize columns to the group `Customize list views`. Note that this
+permission allows all sorts of mischief up to privilege escalation under
+certain circumstances, so this is only for trusted users.
 
 Usage
 =====
@@ -60,8 +64,12 @@ Contributors
 ------------
 
 * Holger Brunn <hbrunn@therp.nl>
+* Jose Zambudio <zamberjo@gmail.com>
 
-Do not contact contributors directly about help with questions or problems concerning this addon, but use the `community mailing list <mailto:community@mail.odoo.com>`_ or the `appropriate specialized mailinglist <https://odoo-community.org/groups>`_ for help, and the bug tracker linked in `Bug Tracker`_ above for technical issues.
+Do not contact contributors directly about help with questions or problems
+concerning this addon, but use the `community mailing list <mailto:community@mail.odoo.com>`_ or
+the `appropriate specialized mailinglist <https://odoo-community.org/groups>`_ for help,
+and the bug tracker linked in `Bug Tracker`_ above for technical issues.
 
 Maintainer
 ----------
