@@ -315,7 +315,8 @@ odoo.define('web_responsive', function(require) {
         /**
          * Search matching menus immediately
          */
-        _searchMenus: function () {
+        _searchSubMenus: function (root_menus) {
+            this.root_menu_ids = root_menus.map(({ id }) => id);
             rpc.query({
                 model: 'ir.ui.menu',
                 method: 'search_read',
@@ -324,10 +325,26 @@ odoo.define('web_responsive', function(require) {
                     domain: [
                         ['name', 'ilike', this.$searchInput.val()],
                         ['action', '!=', false],
+                        ['id', 'child_of', this.root_menu_ids],
                     ],
                     context: session.user_context,
                 },
             }).then(this.showFoundMenus.bind(this));
+        },
+
+        _searchMenus: function () {
+            rpc.query({
+                model: 'ir.ui.menu',
+                method: 'search_read',
+                kwargs: {
+                    fields: ['id'],
+                    domain: [
+                        ['parent_id', '=', false],
+                    ],
+                    context: session.user_context,
+                }
+            }).then(this._searchSubMenus.bind(this));
+
         },
 
         /**
