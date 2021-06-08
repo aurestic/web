@@ -179,6 +179,7 @@ openerp.web_timeline = function(instance) {
                     updateGroup: this.permissions['write'], // drag items from one group to another
                     remove: this.permissions['unlink'],       // delete an item by tapping the delete button top right
                 },
+                locale: openerp.instances.instance0.session.user_context.lang.substring(0, 2),
                 orientation: 'top',
                 selectable: true,
                 showCurrentTime: true,
