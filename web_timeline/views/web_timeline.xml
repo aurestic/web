@@ -4,6 +4,7 @@
 
 <template id="assets_backend" name="web_calendar assets" inherit_id="web.assets_backend">
     <xpath expr="." position="inside">
+        <script type="text/javascript" src="/web_timeline/static/lib/moment/moment-with-locales.min.js"></script>
         <link rel="stylesheet" href="/web_timeline/static/lib/vis/vis-timeline-graph2d.min.css"/>
         <link rel="stylesheet" href="/web_timeline/static/src/css/web_timeline.css"/>
 
