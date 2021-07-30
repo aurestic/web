@@ -7,10 +7,13 @@ from odoo import _, api, models, tools
 class IrUiView(models.Model):
     _inherit = 'ir.ui.view'
 
-    def reset_customized_view(self, type_desc):
-        customized_view = self.env.ref(
+    def get_customized_view(self, type_desc):
+        return self.env.ref(
             self._custom_column_xmlid(type_desc), raise_if_not_found=False
         ) or self.browse([])
+
+    def reset_customized_view(self, type_desc):
+        customized_view = self.get_customized_view(type_desc)
         customized_view.unlink()
 
     @api.model
@@ -24,9 +27,7 @@ class IrUiView(models.Model):
         # print(etree.tostring(tree, pretty_print=True))
         self.ensure_one()
         tree = etree.fromstring(self.read_combined()['arch'])
-        customized_view = self.env.ref(
-            self._custom_column_xmlid(type_desc), raise_if_not_found=False
-        ) or self.browse([])
+        customized_view = self.get_customized_view(type_desc)
 
         fields_names = list(
             map(

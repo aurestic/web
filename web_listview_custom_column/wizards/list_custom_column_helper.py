@@ -15,6 +15,16 @@ class ListCustomColumnHelperWiz(models.TransientModel):
         readonly=True,
         required=True,
     )
+    have_all_customized_view = fields.Boolean(
+        compute="_compute_have_customized_view",
+        invisible=True,
+        store=False,
+    )
+    have_user_customized_view = fields.Boolean(
+        compute="_compute_have_customized_view",
+        invisible=True,
+        store=False,
+    )
     type_desc = fields.Selection(
         selection=[
             ('user', 'User'),
@@ -24,6 +34,12 @@ class ListCustomColumnHelperWiz(models.TransientModel):
         required=True,
         readonly=True,
     )
+
+    @api.depends('view_id')
+    def _compute_have_customized_view(self):
+        for wiz in self:
+            wiz.have_all_customized_view = wiz.view_id.get_customized_view('all')
+            wiz.have_user_customized_view = wiz.view_id.get_customized_view('user')
 
     @api.model
     def default_get(self, fields):
@@ -85,9 +101,14 @@ class ListCustomColumnHelperWiz(models.TransientModel):
         self.type_desc = 'all'
         return self.save()
 
-    def action_reset(self):
+    def action_reset_all(self):
         self.ensure_one()
-        self.view_id.reset_customized_view(self.type_desc)
+        self.view_id.reset_customized_view('all')
+        return self.reload()
+
+    def action_reset_user(self):
+        self.ensure_one()
+        self.view_id.reset_customized_view('user')
         return self.reload()
 
 
