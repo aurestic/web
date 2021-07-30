@@ -186,8 +186,13 @@ msgstr "Quitar"
 
 #. module: web_listview_custom_column
 #: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
-msgid "Reset view"
-msgstr "Borrar vista personalizada"
+msgid "Reset user view"
+msgstr "Borrar vista personalizada (usuario)"
+
+#. module: web_listview_custom_column
+#: model:ir.ui.view,arch_db:web_listview_custom_column.view_list_custom_column_helper
+msgid "Reset all view"
+msgstr "Borrar vista personalizada (todos)"
 
 #. module: web_listview_custom_column
 #: model:ir.model.fields,field_description:web_listview_custom_column.field_list_custom_column_helper_wiz_line_sequence
