@@ -6,6 +6,8 @@
     <field name="model">list.custom.column.helper.wiz</field>
     <field name="arch" type="xml">
         <form string="Custom column">
+            <field name="have_user_customized_view" invisible="1"/>
+            <field name="have_all_customized_view" invisible="1"/>
             <p>
                 The fields can be in view in 2 ways, visible and invisible.
                 In certain views, certain fields must be in view even though
@@ -83,8 +85,14 @@
                     string="Change view: for all users"
                     type="object"
                     class="bg-warning-full"/>
-                <button name="action_reset"
-                    string="Reset view"
+                <button name="action_reset_user"
+                    string="Reset user view"
+                    attrs="{'invisible':[('have_user_customized_view','=',False)]}"
+                    type="object"
+                    class="bg-danger-full"/>
+                <button name="action_reset_all"
+                    string="Reset all view"
+                    attrs="{'invisible':[('have_all_customized_view','=',False)]}"
                     type="object"
                     class="bg-danger-full"/>
                 <button string="_Cancel" class="btn-default" special="cancel" />
