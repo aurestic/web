@@ -14,7 +14,7 @@ odoo.define("web_advanced_search.RelationalOwl", function (require) {
     const AdvancedSearchWidget = FieldMany2One.extend(FieldManagerMixin, {
         init: function (parent) {
             const field = parent.__owl__.parent.field;
-            const model = new BasicModel(field.relation);
+            const model = new BasicModel(parent, {modelName: field.relation});
             // Create dummy record with only the field the user is searching
             const params = {
                 fieldNames: [field.name],
