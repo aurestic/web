@@ -136,6 +136,8 @@ odoo.define("web_timeline.TimelineView", function (require) {
                     : utils.toBoolElse(attrs.stack, true),
                 margin: attrs.margin ? JSON.parse(attrs.margin) : {item: 2},
                 zoomKey: attrs.zoomKey || "ctrlKey",
+                verticalScroll: attrs.verticalScroll || false,
+                horizontalScroll: attrs.horizontalScroll || false,
             };
         },
 
