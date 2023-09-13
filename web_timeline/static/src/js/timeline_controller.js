@@ -58,6 +58,7 @@ odoo.define("web_timeline.TimelineController", function (require) {
 
             let fields = this.renderer.fieldNames;
             fields = _.uniq(fields.concat(n_group_bys));
+            this.render.blockUI();
             $.when(
                 res,
                 this._rpc({
